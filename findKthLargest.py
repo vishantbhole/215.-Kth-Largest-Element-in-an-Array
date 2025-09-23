@@ -20,3 +20,10 @@ class Solution(object):
                     heapq.heappush(heap,num)
 
         return heap[0]
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [3,2,1,5,6,4]
+    k = 2
+    print("Output is : ", sol.findKthLargest(nums, k))
+
