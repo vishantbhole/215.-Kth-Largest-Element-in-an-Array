@@ -9,3 +9,8 @@ class Solution(object):
         """
         # nums.sort()
         # return nums[len(nums) - k]
+        heap = []
+
+        for num in nums:
+            if len(heap) < k:
+                heapq.heappush(heap,num)
